@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    	<!----nav bar---->
+        <header>
+    <img class="logo-nav" src="img/Logo Png (1).png" alt="">
+        <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Over mij</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Over mij</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <!----head content---->
+    <section class="hero-section">
+        <div class="hero">
+            <div class="content">
+              <img class="logo-hero" src="img/Logo Png.png" alt="">
+              <h3>Disco | House | Tech-house | Techno</h3>
+              <div class="hero-contact">
+              <button type="button" onclick="location.href='https://wa.me/0031621650700'">Contact me</button>
+            </div>
+        </div>
+    </section>
+
+    <!----About section start---->
+
+	<section class="about">
+		<div class="main">
+            <div class="img-main">
+			        <img src="img/Remco DJ-1.JPG">
+            </div>
+			<div class="about-text">
+				<h2>Over mij</h2>
+				<h5> <span>DJ</span></h5>
+				<p> Meer dan 3 jaar geleden ben ik begonnen als (tech)house dj. Tegenwoordig kun je me regelmatig zien optreden bij verschillende clubs, evenementen of feesten. Zo heb ik onder andere opgetreden bij de Harbour Club in Eindhoven.</p>
+				<p> Mijn specialiteit ligt in de eindeloze lijst van (tech)house remixjes van herkenbare en toegankelijke nummers. Met mijn funky (tech)house muziek weet ik de gehele gegarandeerd dansvloer los te krijgen.</p>
+				<p> Wil je op de hoogte blijven van mijn opkomende optredens? Schrijf je dan snel in voor mijn nieuwsbrief!</p>
+				<div class="newslatter-about">
+					<form>
+						<input type="email" name="email" id="mail" placeholder="Email">
+						<input type="submit" name="submit" value="Sign up!">
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-----service section start----------->
+
+  <div class="service">
+		<div class="title">
+			<h2>Gigs</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-umbrella-beach"></i>
+				<h5>House, Disco & Funk</h5>
+				<div class="pra">
+					<p>House, disco en funk is de ideale combinatie aan muziek om een luxe en zomerse sfeer te creëren.</p> 
+					<p>  Ideaal voor een: <span>Bedrijfsborrel | Zomers terras | beurs </span></p>
+					<p style="text-align: center;">
+					<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fas fa-compact-disc"></i>
+				<h5>Tech House | Techno</h5>
+				<div class="pra">
+					<p>Ga los op de hardste tech house en techno beats van het moment. Mijn gigs zijn kenmerkend door de eindeloze remixjes van oude goude nummers, maar dan net wat harder</p> 
+					<p>  Ideaal voor een: <span>Club | Festival | Café </span></p>
+					
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fas fa-glass-cheers"></i>
+				<h5>All-Round</h5>
+				<div class="pra">
+					<p>Zin in een feestje waar van jong tot oud los gaat tot in de late uurtjes. Top 40, hollands of disco ieders favoriete muziekgenre komt voorbij.</p>
+					<p> Ideaal voor een: <span> Bruiloft | Verjaardag </span></p>
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  	<!------Contact Me------>
+	<div class="contact-me">
+		<p>Let's get that party started!</p>
+		<a class="button-two" href="https://wa.me/0031621650700">Vraag offerte aan</a>
+	</div>
+
+  	<!------footer start--------->
+	<footer>
+		<p>Von Wick</p>
+		<p>Klik op de onderstaande </p>
+    <p>buttons voor meer content</p>
+		<div class="social">
+			<a href="https://www.youtube.com/channel/UCTDDPYmYwC6Xm_6Mu3Q_Sxg"><i class="fab fa-youtube"></i></a>
+			<a href="https://soundcloud.com/vonwick"><i class="fab fa-soundcloud"></i></a>
+			<a href="https://www.instagram.com/remcowijk/"><i class="fab fa-instagram"></i></a>
+		</div>
+		<p class="end">CopyRight By Von Wick Music</p>
+	</footer>
+
+<script src="js/index.js"></script>
+    
+</body>
+</html>
