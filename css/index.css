@@ -363,7 +363,8 @@ button:hover{
 	background: #101010;
 	width: 100%;
 	padding: 20px 0px;
-	justify-content: center;
+	display: flexbox;
+	align-items: center;
 }
 
 /* on PC */
@@ -378,21 +379,22 @@ button:hover{
 }
 
 .box{
-	display: flex;
-	justify-content: center;
-	min-height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card{
-	height: 90%;
-	width: 30%;
+	width: 80%;
 	padding: 20px 35px;
 	background: #191919;
 	border-radius: 20px;
 	margin: 15px;
-	position: relative;
 	overflow: hidden;
 	text-align: center;
+	display: flexbox;
+	justify-content: center;
 }
 .card i{
 	font-size: 50px;
@@ -425,6 +427,7 @@ h5{
 	padding: 9px 22px;
 	border-radius: 30px;
 	transition: .4s; 
+	margin-bottom: 15px;
 }
 .card .button:hover{
 	background-color: transparent;
@@ -445,16 +448,17 @@ h5{
 	}
 	
 	.box{
-		display: flexbox;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 		justify-content: center;
 	}
 	
 	.card{
-		padding: 20px 35px;
+		padding: 20px 20px;
 		border-radius: 20px;
-		margin-left: 50px;
-		margin-right: 50px;
-		margin-bottom: 35px;
+		width: 90%;
+		margin-bottom: 20px;
 		background: #191919;
 		text-align: center;
 		display: flexbox;
@@ -493,6 +497,7 @@ h5{
 		padding: 9px 22px;
 		border-radius: 30px;
 		transition: .4s;
+		margin-bottom: 15px;
 	}
 	.card .button:hover{
 		background-color: transparent;
