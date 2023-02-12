@@ -20,7 +20,7 @@ header a {
 header {
   padding: 0 20px;
   background-color: #1d1f1d;
-  height: 50px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -96,7 +96,7 @@ ul li:hover {
 	display: none;
   background: #000;
   position: absolute;
-  top: 50px;
+  top: 70px;
   left: 0;
   height: auto;
   width: 100%;
@@ -519,13 +519,13 @@ h5{
 }
 .contact-me p{
 	color: white;
-	font-size: 4vw;
+	font-size: max(4vw, 12px);
 	font-weight: bold;
 	margin-bottom: 25px;
 }
 .contact-me .button-two{
 	background-color:#f9004d;
-	font-size: 2vw;
+	font-size: max(2vw, 16px);
 	color: white;
 	text-decoration: none;
 	border: 2px solid transparent;
@@ -541,6 +541,7 @@ h5{
 }
 
 /* Footer */
+
 footer{
 	position: relative;
 	width: 100%;
@@ -552,20 +553,20 @@ footer{
 	justify-content: center;
 }
 footer p:nth-child(1){
-	font-size: 4vw;
+	font-size: max(4vw, 24px);
 	color: #cc9e44;
 	margin-bottom: 20px;
 	font-weight: bold;
 }
 footer p:nth-child(2){
 	color: white;
-	font-size: 2vw;
+	font-size: max(2vw, 16px);
 	text-align: center;
 	line-height: 26px;
 }
 footer p:nth-child(3){
 	color: white;
-	font-size: 2vw;
+	font-size: max(2vw, 16px);
 	text-align: center;
 	line-height: 26px;
 }
@@ -593,5 +594,5 @@ footer p:nth-child(3){
 	position: absolute;
 	color:#f9004d;
 	bottom: 35px;
-	font-size: 2vw; 
+	font-size: max(2vw, 12px);
 }
