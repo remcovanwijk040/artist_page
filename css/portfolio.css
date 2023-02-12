@@ -117,39 +117,6 @@ header nav {
 }
 }
 
-/* Contact me */
-.contact_info{
-    width: 100%;
-    background: #030303;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-.contact_info p{
-    color: #cc9e44;
-    font-size: max(4vw, 24px);
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-.contact_info .button-two{
-    background-color:#f9004d;
-    font-size: max(2vw, 13px);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 8px 25px;
-    border-radius: 30px;
-    transition: .4s; 
-}
-.contact_info .button-two:hover{
-    background-color: transparent;
-    border: 2px solid #f9004d;
-    cursor: pointer;
-}
-
 /* Footer */
 
 footer{
