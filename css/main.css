@@ -160,6 +160,7 @@ ul li:hover {
 
 /* Contact me */
 .contact-me{
+	padding-top: 20px;
 	width: 100%;
 	background: #191919;
 	display: flex;
