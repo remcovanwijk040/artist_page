@@ -410,6 +410,7 @@ button:hover{
   .carousel .card {
 	scroll-snap-align: start;
 	list-style: none;
+	width: 100px;
 	background: #000000;
 	cursor: pointer;
 	padding-bottom: 15px;
