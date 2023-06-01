@@ -446,8 +446,14 @@ button:hover{
 	  grid-auto-columns: calc((100% / 3) - 9px);
 	}
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 620px) {
 	.wrapper .carousel {
 	  grid-auto-columns: calc((100% / 2) - 9px);
+	}
+  }
+
+  @media screen and (max-width: 400px) {
+	.wrapper .carousel {
+	  grid-auto-columns: calc((100% / 1) - 90px);
 	}
   }
