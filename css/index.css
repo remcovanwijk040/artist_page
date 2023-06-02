@@ -398,12 +398,7 @@ button:hover{
 	animation: 25s slide infinite linear;
   }
 
-  .logos-slide div{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-  }
+  
   
   .logos-slide img {
 	height: 160px;
