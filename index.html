@@ -97,40 +97,22 @@
 	</div>	
 </section>
 
-<div class="wrapper">
-	<i id="left" class="fa-solid fas fa-arrow-left"></i>
-	<ul class="carousel">
-	  <li class="card">
-		<div class="img"><img src="img/known_from/download-psv.png" alt="img" draggable="false"></div>
-		<h2>PSV Business Lounge</h2>
-	  </li>
-	  <li class="card">
-		<div class="img"><img src="img/known_from/The-Harbour-Club-Logo.jpeg" alt="img" draggable="false"></div>
-		<h2>The Harbour Club</h2>
-	  </li>
-	  <li class="card">
-		<div class="img"><img src="img/known_from/Kram-Logo-cafe-de-vierkant.png" alt="img" draggable="false"></div>
-		<h2>De Kram</h2>
-	  </li>
-	  <li class="card">
-		<div class="img"><img src="img/known_from/EhvBusinessClub_Icon.png" alt="img" draggable="false"></div>
-		<h2>EHV Business Club</h2>
-	  </li>
-	  <li class="card">
-		<div class="img"><img src="img/known_from/ebclogo.jpg" alt="img" draggable="false"></div>
-		<h2>Eindhoven Box Cup</h2>
-	  </li>
-	  <li class="card">
-		<div class="img"><img src="img/known_from/dinnershow.jpg" alt="img" draggable="false"></div>
-		<h2>Dinnershow Luxerious</h2>
-	  </li>
-	  <li class="card">
-		<div class="img"><img src="img/known_from/strand365logo.jpg" alt="img" draggable="false"></div>
-		<h2>Strand365</h2>
-	  </li>
-	</ul>
-	<i id="right" class="fa-solid fas fa-arrow-right"></i>
+  <div class="logos">
+	<div class="logos-slide">
+	  <img src="img/known_from/download-psv.png" alt='psv_logo'/>
+	  <img src="img/known_from/The-Harbour-Club-Logo.jpeg" alt='the_harbour_club_logo'/>
+	  <img src="img/known_from/Kram-Logo-cafe-de-vierkant.png" alt='cafe_de_kram_logo'/>
+	  <img src="img/known_from/EhvBusinessClub_Icon.png" alt='eindhoven_business_club_logo'/>
+	  <img src="img/known_from/ebclogo.jpg" alt='eindhoven_box_cup_logo'/>
+	  <img src="img/known_from/dinnershow.jpg" alt='dinnershow_luxerious_logo'/>
+	  <img src="img/known_from/strand365logo.jpg" alt='strand365_logo'/>
+	</div>
   </div>
+
+  <script>
+	var copy = document.querySelector(".logos-slide").cloneNode(true);
+	document.querySelector(".logos").appendChild(copy);
+  </script>
 
 	<!-----service section start----------->
 

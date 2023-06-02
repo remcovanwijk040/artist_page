@@ -352,108 +352,69 @@ button:hover{
 
 }
 
-.wrapper {
-	width: 100%;
+  @keyframes slide {
+	from {
+	  transform: translateX(0);
+	}
+	to {
+	  transform: translateX(-100%);
+	}
+  }
+  
+  .logos {
+	overflow: hidden;
+	padding: 60px 0;
+	background: #191919;
+	white-space: nowrap;
 	position: relative;
   }
-  .wrapper i {
-	top: 50%;
-	height: 50px;
-	width: 50px;
-	cursor: pointer;
-	font-size: 1.50rem;
+  
+  .logos:before,
+  .logos:after {
 	position: absolute;
-	text-align: center;
-	line-height: 50px;
-	background: #000000;
-	border-radius: 50%;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-	transform: translateY(-50%);
-	transition: transform 0.1s linear;
+	top: 0;
+	width: 250px;
+	height: 100%;
+	content: "";
+	z-index: 2;
   }
-  .wrapper i:active{
-	transform: translateY(-50%) scale(0.85);
+  
+  .logos:before {
+	left: 0;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0), #191919);
   }
-  .wrapper i:first-child{
-	left: -0px;
+  
+  .logos:after {
+	right: 0;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), #191919);
   }
-  .wrapper i:last-child{
-	right: -0px;
+  
+  .logos:hover .logos-slide {
+	animation-play-state: paused;
   }
-  .wrapper .carousel{
-	display: grid;
-	grid-auto-flow: column;
-	grid-auto-columns: calc((100% / 5));
-	overflow-x: auto;
-	scroll-snap-type: x mandatory;
-	gap: 16px;
-	border-radius: 8px;
-	scroll-behavior: smooth;
-	scrollbar-width: none;
-	
-  }
-  .carousel::-webkit-scrollbar {
-	display: none;
-  }
-  .carousel.no-transition {
-	scroll-behavior: auto;
-  }
-  .carousel.dragging {
-	scroll-snap-type: none;
-	scroll-behavior: auto;
-  }
-  .carousel.dragging .card {
-	cursor: grab;
-	user-select: none;
-  }
-  .carousel :where(.card, .img) {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
-  .carousel .card {
-	scroll-snap-align: start;
-	list-style: none;
-	width: 200px;
-	background: #0c0b0b;
-	cursor: pointer;
-	padding-bottom: 15px;
-	flex-direction: column;
-	border-radius: 8px;
-  }
-  .carousel .card .img {
-	height: 148px;
-	width: 148px;
-  }
-  .card .img img {
-	width: 140px;
-	height: 140px;
-	object-fit: cover;
-	border: 4px solid #000000;
-  }
-  .carousel .card h2 {
-	font-weight: 500;
-	font-size: 1.56rem;
-	margin: 30px 0 5px;
-  }
-  @media screen and (max-width: 1400px) {
-	.wrapper .carousel {
-	  grid-auto-columns: calc((100% / 4) - 9px);
-	}
-  }
-  @media screen and (max-width: 900px) {
-	.wrapper .carousel {
-	  grid-auto-columns: calc((100% / 3) - 9px);
-	}
-  }
-  @media screen and (max-width: 620px) {
-	.wrapper .carousel {
-	  grid-auto-columns: calc((100% / 2) - 9px);
-	}
+  
+  .logos-slide {
+	display: inline-block;
+	animation: 25s slide infinite linear;
   }
 
-  @media screen and (max-width: 400px) {
-	.wrapper .carousel {
-	  grid-auto-columns: calc((100% / 1) - 90px);
-	}
+  .logos-slide div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .logos-slide img {
+	height: 160px;
+	margin: 0 20px;
+	border-radius: 16px;
+  }
+
+  @media screen and (max-width: 600px) {
+	.logos-slide img {
+		height: 120px;
+		margin: 0 20px;
+		border-radius: 16px;
+	  }
   }
